@@ -10,20 +10,16 @@
         android:id="@+id/BScan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="89dp"
+        android:layout_marginBottom="132dp"
         android:text="Scan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="232dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="154dp"
-        android:layout_marginBottom="345dp"
-        android:text="TextView"
+        android:layout_width="244dp"
+        android:layout_height="76dp"
         app:layout_constraintBottom_toTopOf="@+id/BScan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

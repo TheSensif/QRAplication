@@ -1,5 +1,6 @@
 package com.thesensif.qraplication;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
@@ -52,7 +53,9 @@ public class ScanActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ScanActivity.this, result.getText(), Toast.LENGTH_SHORT).show();
+                        Intent mainActivity = new Intent(ScanActivity.this, MainActivity.class);
+                        mainActivity.putExtra("qr",result.getText());
+                        startActivity(mainActivity);
                     }
                 });
             }
